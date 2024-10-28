@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THIES-IMMOBILIER</title>
+    <link rel="stylesheet" type="text/css" href="ac.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+   
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="ac.js"></script>
+
+    <!-- Navigation -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light fixed-top">
+    <img src="image/logo.jpg" class="rounded-circle" alt="Logo" width="150">
+
+    <!-- Ajout de l'image GIF ici -->
+    <img src="image/christmas.gif" alt="Arbre de Noël" width="100" height="auto" class="rounded-circle mx-3"> 
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+            <!-- Accueil avec icône maison -->
+            <li class="nav-item me-5">
+                <a class="nav-link" href="accueil.html">
+                    <i class="bi bi-house-door-fill"></i> Accueil
+                </a>
+            </li>
+
+            <!-- Logements avec icône bâtiment -->
+            <li class="nav-item dropdown me-5">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                    <i class="bi bi-building"></i> Logements
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="chambre.html"><i class="bi bi-door-closed-fill"></i> Chambre</a></li>
+                    <li><a class="dropdown-item" href="appartement.html"><i class="bi bi-building" style="color: #007bff;"></i> Appartement</a></li>
+                    <li><a class="dropdown-item" href="studio.html"><i class="bi bi-house"></i> Studio</a></li>
+                </ul>
+            </li>
+
+            <!-- Inscription avec icône utilisateur -->
+            <li class="nav-item me-5">
+                <a class="nav-link" href="inscription.html">
+                    <i class="bi bi-person-fill"></i> Inscription
+                </a>
+            </li>
+
+            <!-- Contact avec icône enveloppe -->
+            <li class="nav-item me-5">
+                <a class="nav-link" href="contact.html">
+                    <i class="bi bi-envelope-fill text-success"></i> Contact
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Flocons de neige -->
+<div class="snowflake">❅</div>
+<div class="snowflake">❆</div>
+<div class="snowflake">❅</div>
+<div class="snowflake">❆</div>
+<div class="snowflake">❅</div>
+<div class="snowflake">❆</div>
+
+
+
+
+    <!-- Carousel -->
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+
+    <div class="carousel-inner">
+        <!-- First Slide: Text with Black Semi-transparent Background -->
+        <div class="carousel-item active" style="background-image: url('image/e.jpg'); background-size: cover; background-position: center; height: 900px;">
+            <div class="carousel-caption d-flex flex-column align-items-start justify-content-center text-start" style="height: 100%;">
+                <h3 class="animate__animated animate__fadeInUp" style="color: #fff; font-size: 3em; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); background-color: rgba(0, 0, 0, 0.6); padding: 10px; border-radius: 5px;">Trouvez le logement de vos rêves</h3>
+                <p class="animate__animated animate__fadeInUp animate__delay-1s" style="color: #fff; font-size: 1.5em; background-color: rgba(0, 0, 0, 0.6); padding: 5px; border-radius: 5px;">Explorez nos meilleures offres</p>
+            </div>
+        </div>
+
+        <!-- Second Slide with Black Semi-transparent Background -->
+        <div class="carousel-item" style="background-image: url('image/casorol2.jpg'); background-size: cover; background-position: center; height: 900px;">
+            <div class="carousel-caption d-flex flex-column align-items-start justify-content-center text-start" style="height: 100%;">
+                <h3 class="animate__animated animate__fadeInDown" style="color: #fff; font-size: 3em; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); background-color: rgba(0, 0, 0, 0.6); padding: 10px; border-radius: 5px;">Découvrez des opportunités uniques</h3>
+                <p class="animate__animated animate__fadeIn animate__delay-1s" style="color: #fff; font-size: 1.5em; background-color: rgba(0, 0, 0, 0.6); padding: 5px; border-radius: 5px;">Profitez d'une expérience inédite</p>
+            </div>
+        </div>
+
+        <!-- Third Slide with Black Semi-transparent Background -->
+        <div class="carousel-item" style="background-image: url('image/cassorol.jpg'); background-size: cover; background-position: center; height: 900px;">
+            <div class="carousel-caption d-flex flex-column align-items-end justify-content-center text-end" style="height: 100%;">
+                <h3 class="animate__animated animate__bounceInRight" style="color: #fff; font-size: 3em; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); background-color: rgba(0, 0, 0, 0.6); padding: 10px; border-radius: 5px;">Un logement à votre image</h3>
+                <p class="animate__animated animate__fadeInLeft animate__delay-1s" style="color: #fff; font-size: 1.5em; background-color: rgba(0, 0, 0, 0.6); padding: 5px; border-radius: 5px;">À la hauteur de vos attentes</p>
+            </div>
+        </div>
+
+        <!-- Fourth Slide with Black Semi-transparent Background -->
+        <div class="carousel-item" style="background-image: url('image/appa2.webp'); background-size: cover; background-position: center; height: 900px;">
+            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center text-center" style="height: 100%;">
+                <h3 class="animate__animated animate__flipInX" style="color: #fff; font-size: 3em; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); background-color: rgba(0, 0, 0, 0.6); padding: 10px; border-radius: 5px;">Votre nouveau chez-vous vous attend</h3>
+                <p class="animate__animated animate__fadeInRightBig animate__delay-1s" style="color: #fff; font-size: 1.5em; background-color: rgba(0, 0, 0, 0.6); padding: 5px; border-radius: 5px;">Visitez nos offres maintenant</p>
+            </div>
+        </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Précédent</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Suivant</span>
+    </button>
+</div>
+
+<!-- Include Animate.css for advanced animations -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
+  <!-- Toutes les chambres -->
+ <h1 class="display-4 color-change text-center">NObe<br><span class="highlight">nala boy</span></h1>
+<div class="container mt-4">
+    <div class="row">
+
+        <!-- Chambre Simple -->
+        <div class="col-md-4">
+            <div class="property-item card mb-4 animate-on-hover">
+                <img src="image/chambre1.jpg" class="card-img-top" alt="Chambre Simple">
+                <div class="card-body">
+                    <h3 class="card-title">Chambre Simple</h3>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-house-door-fill"></i> Surface: 12-15m²</li>
+                        <li><i class="bi bi-cash-stack"></i> Prix: 50 000 CFA / mois</li>
+                    </ul>
+                    <p class="card-text">
+                        Idéale pour les personnes recherchant simplicité et confort à un tarif attractif, cette chambre lumineuse et bien agencée offre un espace fonctionnel.
+                    </p>
+                    <h5>Caractéristiques :</h5>
+                    <ul class="characteristics list-unstyled" style="display: none;">
+                        <li><i class="bi bi-lightbulb-fill"></i> Lumière naturelle abondante</li>
+                        <li><i class="bi bi-wifi"></i> Connexion Wi-Fi haut débit incluse</li>
+                        <li><i class="bi bi-door-open"></i> Accès sécurisé 24h/24</li>
+                        <li><i class="bi bi-building"></i> À proximité des commodités et transports en commun</li>
+                    </ul>
+                    <button class="btn btn-info mt-3" onclick="toggleCharacteristics(this)">Plus</button>
+                    <a href="contact.html" class="btn btn-primary mt-3">Contactez-nous pour plus d'infos</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Chambre Double -->
+        <div class="col-md-4">
+            <div class="property-item card mb-4 animate-on-hover">
+                <img src="image/Chambre2.webp" class="card-img-top" alt="Chambre Double">
+                <div class="card-body">
+                    <h3 class="card-title">Chambre Double</h3>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-house-fill"></i> Surface: 15-20m²</li>
+                        <li><i class="bi bi-cash-stack"></i> Prix: 70 000 CFA / mois</li>
+                    </ul>
+                    <p class="card-text">
+                        Profitez d'un espace plus grand avec cette chambre double, parfaite pour les couples ou colocataires.
+                    </p>
+                    <h5><br>Caractéristiques supplémentaires :</h5>
+                    <ul class="characteristics list-unstyled" style="display: none;">
+                        <li><i class="bi bi-lightbulb"></i> Éclairage naturel et artificiel de qualité</li>
+                        <li><i class="bi bi-air-conditioner"></i> Climatisation incluse</li>
+                        <li><i class="bi bi-tv"></i> Télévision à écran plat avec chaînes câblées</li>
+                        <li><i class="bi bi-wifi"></i> Connexion Wi-Fi haut débit gratuite</li>
+                        <li><i class="bi bi-cup-straw"></i> Kitchenette commune entièrement équipée</li>
+                        <li><i class="bi bi-door-closed"></i> Accès sécurisé 24h/24 et 7j/7</li>
+                        <li><i class="bi bi-elevator"></i> Ascenseur dans l'immeuble</li>
+                        <li><i class="bi bi-tree"></i> Espace extérieur partagé avec jardin</li>
+                        <li><i class="bi bi-parking"></i> Parking gratuit pour les résidents</li>
+                    </ul>
+                    <button class="btn btn-info mt-3" onclick="toggleCharacteristics(this)">Plus</button>
+                    <a href="contact.html" class="btn btn-success mt-3">Réserver Maintenant</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chambre de Luxe -->
+        <div class="col-md-4">
+            <div class="property-item card mb-4 animate-on-hover">
+                <img src="image/Chambre3.webp" class="card-img-top" alt="Chambre de Luxe">
+                <div class="card-body">
+                    <h3 class="card-title">Chambre de Luxe</h3>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-house-door-fill"></i> Surface: 20-25m²</li>
+                        <li><i class="bi bi-cash-stack"></i> Prix: 85 000 CFA / mois</li>
+                    </ul>
+                    <p class="card-text">
+                        Plongez dans un monde de luxe et de modernité avec cette chambre raffinée.
+                    </p>
+                    <h5><br><br>Caractéristiques de luxe :</h5>
+                    <ul class="characteristics list-unstyled" style="display: none;">
+                        <li><i class="bi bi-lightbulb-fill"></i> Éclairage LED ajustable pour une ambiance chaleureuse</li>
+                        <li><i class="bi bi-air-conditioner"></i> Climatisation avec contrôle individuel</li>
+                        <li><i class="bi bi-tv"></i> Télévision 4K Ultra HD avec abonnement à Netflix</li>
+                        <li><i class="bi bi-wifi"></i> Wi-Fi privé et sécurisé</li>
+                        <li><i class="bi bi-cup-hot-fill"></i> Machine à café Nespresso</li>
+                        <li><i class="bi bi-shower"></i> Salle de bain privative avec douche à effet pluie</li>
+                        <li><i class="bi bi-soundwave"></i> Système audio Bluetooth intégré</li>
+                        <li><i class="bi bi-safe-fill"></i> Coffre-fort personnel</li>
+                        <li><i class="bi bi-car-front-fill"></i> Parking privé sécurisé</li>
+                        <li><i class="bi bi-flower1"></i> Balcon privé avec vue panoramique</li>
+                        <li><i class="bi bi-building"></i> Service de conciergerie 24h/24</li>
+                    </ul>
+                    <button class="btn btn-info mt-3" onclick="toggleCharacteristics(this)">Plus</button>
+                    <a href="contact.html" class="btn btn-danger mt-3">Réservez votre Chambre de Luxe</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chambre Étudiante -->
+        <div class="col-md-4">
+            <div class="property-item card mb-4 animate-on-hover">
+                <img src="image/chambre4.webp" class="card-img-top" alt="Chambre Étudiante">
+                <div class="card-body">
+                    <h3 class="card-title">Chambre Étudiante</h3>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-house-door"></i> Surface: 10-14m²</li>
+                        <li><i class="bi bi-cash-stack"></i> Prix: 30 000 CFA / mois</li>
+                    </ul>
+                    <p class="card-text">
+                        Pensée pour les étudiants, cette chambre offre tout le nécessaire pour un quotidien fonctionnel et paisible.
+                    </p>
+                    <h5>Caractéristiques principales :</h5>
+                    <ul class="characteristics list-unstyled" style="display: none;">
+                        <li><i class="bi bi-lightbulb-fill"></i> Luminosité naturelle idéale pour étudier</li>
+                        <li><i class="bi bi-wifi"></i> Wi-Fi haut débit inclus</li>
+                        <li><i class="bi bi-desk"></i> Bureau intégré</li>
+                        <li><i class="bi bi-lock-fill"></i> Placard privé avec serrure</li>
+                        <li><i class="bi bi-door-closed-fill"></i> Accès sécurisé</li>
+                        <li><i class="bi bi-people-fill"></i> Communauté conviviale</li>
+                    </ul>
+                    <button class="btn btn-info mt-3" onclick="toggleCharacteristics(this)">Plus</button>
+                    <a href="contact.html" class="btn btn-info mt-3">Contactez-nous pour plus d'infos</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="property-item card mb-4 animate-on-hover">
+                <img src="image/chambre4.webp" class="card-img-top" alt="Chambre Étudiante">
+                <div class="card-body">
+                    <h3 class="card-title">Chambre Étudiante</h3>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-house-door"></i> Surface: 10-14m²</li>
+                        <li><i class="bi bi-cash-stack"></i> Prix: 30 000 CFA / mois</li>
+                    </ul>
+                    <p class="card-text">
+                        Pensée pour les étudiants, cette chambre offre tout le nécessaire pour un quotidien fonctionnel et paisible.
+                    </p>
+                    <h5>Caractéristiques principales :</h5>
+                    <ul class="characteristics list-unstyled" style="display: none;">
+                        <li><i class="bi bi-lightbulb-fill"></i> Luminosité naturelle idéale pour étudier</li>
+                        <li><i class="bi bi-wifi"></i> Wi-Fi haut débit inclus</li>
+                        <li><i class="bi bi-desk"></i> Bureau intégré</li>
+                        <li><i class="bi bi-lock-fill"></i> Placard privé avec serrure</li>
+                        <li><i class="bi bi-door-closed-fill"></i> Accès sécurisé</li>
+                        <li><i class="bi bi-people-fill"></i> Communauté conviviale</li>
+                    </ul>
+                    <button class="btn btn-info mt-3" onclick="toggleCharacteristics(this)">Plus</button>
+                    <a href="contact.html" class="btn btn-info mt-3">Contactez-nous pour plus d'infos</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="property-item card mb-4 animate-on-hover">
+                <img src="image/chambre4.webp" class="card-img-top" alt="Chambre Étudiante">
+                <div class="card-body">
+                    <h3 class="card-title">Chambre Étudiante</h3>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-house-door"></i> Surface: 10-14m²</li>
+                        <li><i class="bi bi-cash-stack"></i> Prix: 30 000 CFA / mois</li>
+                    </ul>
+                    <p class="card-text">
+                        Pensée pour les étudiants, cette chambre offre tout le nécessaire pour un quotidien fonctionnel et paisible.
+                    </p>
+                    <h5>Caractéristiques principales :</h5>
+                    <ul class="characteristics list-unstyled" style="display: none;">
+                        <li><i class="bi bi-lightbulb-fill"></i> Luminosité naturelle idéale pour étudier</li>
+                        <li><i class="bi bi-wifi"></i> Wi-Fi haut débit inclus</li>
+                        <li><i class="bi bi-desk"></i> Bureau intégré</li>
+                        <li><i class="bi bi-lock-fill"></i> Placard privé avec serrure</li>
+                        <li><i class="bi bi-door-closed-fill"></i> Accès sécurisé</li>
+                        <li><i class="bi bi-people-fill"></i> Communauté conviviale</li>
+                    </ul>
+                    <button class="btn btn-info mt-3" onclick="toggleCharacteristics(this)">Plus</button>
+                    <a href="contact.html" class="btn btn-info mt-3">Contactez-nous pour plus d'infos</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Chambre Partagée -->
+      
+        </div>
+
+    </div>
+</div>
+
+<script>
+function toggleCharacteristics(button) {
+    const characteristics = button.previousElementSibling; // L'élément UL précédent
+    if (characteristics.style.display === "none") {
+        characteristics.style.display = "block"; // Affiche les caractéristiques
+        button.textContent = "Moins"; // Change le texte du bouton
+    } else {
+        characteristics.style.display = "none"; // Masque les caractéristiques
+        button.textContent = "Plus"; // Réinitialise le texte du bouton
+    }
+}
+</script>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 text-start">
+                   <h6 class="text-uppercase mb-2 font-weight-bold d-flex align-items-center justify-content-center" style="font-size: 1rem;">
+            <i class="fas fa-handshake" style="font-size: 50px; color: #007bff; margin-right: 10px;"></i>
+            Nos Partenaires
+        </h6>                <p style="font-size: 0.9rem;">
+                    <img src="image/senegal.png" alt="Dangote" width="20" height="20">SENEGAL CONSTRUCTION
+                </p>
+                <p style="font-size: 0.9rem;">
+                    <img src="image/socosim.jpg" alt="Sonac" width="20" height="20"> SOCOSIM
+                </p>
+            </div>
+            <div class="col-md-4 text-center">
+                 <h6 class="text-uppercase mb-2 font-weight-bold d-flex align-items-center justify-content-center" style="font-size: 1rem;">
+            <i class="bi bi-star" style="font-size: 50px; color: #007bff; margin-right: 10px;"></i>
+            Nos Sponsors
+        </h6>
+                <p style="font-size: 0.9rem;">
+                    <img src="image/isep.png" alt="ISEP" width="20" height="20"> ISEP
+                </p>
+                <p style="font-size: 0.9rem;">
+                    <img src="image/3fpt.png" alt="3FPT" width="20" height="20"> 3FPT
+                </p>
+            </div>
+            <div class="col-md-4 text-end">
+                  <h6 class="text-uppercase mb-2 font-weight-bold d-flex align-items-center justify-content-center" style="font-size: 1rem;">
+            <i class="fas fa-globe" style="font-size: 50px; color: #007bff; margin-right: 10px;"></i>
+            Suivez-nous sur
+        </h6>
+                <div class="d-flex justify-content-end">
+                    <a href="https://www.facebook.com/profile.php?id=61565213301897" target="_blank" class="me-2">
+                        <img src="image/fa.png" alt="Facebook" width="30" height="25">
+                    </a>
+                    <a href="https://chat.whatsapp.com/FNgGi35Ei1TElzFKj0vOO3" target="_blank" class="me-2">
+                        <img src="image/whatsapp.jpg" alt="WhatsApp" width="30" height="25">
+                    </a>
+                    <a href="https://www.youtube.com/@Sonko5" target="_blank">
+                        <img src="image/y.png" alt="YouTube" width="30" height="25">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <marquee behavior="scroll" direction="left" class="text-light mt-2" style="font-size: 0.8rem;">
+                   © PAPA MALICK TEUW<span> 771719013</span>
+                </marquee>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
